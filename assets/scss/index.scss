@@ -1,0 +1,307 @@
+// variables
+$Background : #fafafa;
+
+
+* {
+	margin: 0;
+	padding: 0;
+	color: $Background; 
+}
+
+body {
+ 	background : #3e65cf ;
+}
+
+#header {
+	width : 100vw;
+	height : 10vh;	
+	display : flex;
+	align-items : center;
+	color : #f44336;
+	#logo {
+		height :  40px;
+		width :  109px;
+		margin-left : 1vw;
+		&:hover {
+			cursor : pointer;
+		}
+	}
+
+	#left-menu {
+		display : flex;
+	}
+
+	#search {
+		display : flex;
+		button {
+			background : transparent;
+			border : 5px  5px  solid black;
+			height : 7.4vh;
+		}
+	}
+
+	#right-menu {
+		display : flex;
+		justify-content : flex-end;
+		flex-grow : 1;
+		height : 40px;
+	}
+
+	#menu-icon {
+		height : 30px;	
+		width :  30px;
+		margin-left : 15px;
+		margin-top : 6px;
+		&:hover {
+			cursor : pointer;
+		}
+	}
+
+	#search-icon {
+		height : 40px;	
+		width : 40px;
+		margin-left : 8vw;
+		border : 1px solid black;
+		border-radius :   5px 0px 0px 5px;
+		&:hover {
+			cursor : pointer;
+		}
+	}
+
+	#search-bar {
+		height : 7vh;
+		width : 50vw;
+		border : 1px solid black;
+		border-radius : 0px 5px 5px 0px;
+		background : transparent;
+		font : normal 16px Roboto,sans-serif;
+		color : black;
+		font-size: 1em;
+	}
+
+	#apps-icon {
+		height : 30px;	
+		width : 30px;
+		margin-left : 15vw;
+		&:hover {
+			cursor : pointer;
+		}
+	}
+
+	#notification-icon {
+		height : 30px;	
+		width : 30px;
+		margin-right : 20px;
+		margin-left : 20px;
+		&:hover {
+			cursor : pointer;
+		}
+	}
+
+
+	#profile-picture-wrapper {
+		height : 30px;	
+		width : 30px;
+		margin-right : 20px;
+		display : inline-block;
+	    border-radius: 50%;
+	    overflow : hidden;
+	}
+
+	#profile-picture {
+		height : inherit;	
+		width : inherit;
+		&:hover {
+			cursor : pointer;
+		}
+	} 
+}
+
+
+// middle section
+
+#container {
+	display : flex;
+}
+
+#menu {
+	height : 90vh;
+	flex-grow : 50;
+	div {
+		height : 10px;
+		width : 100%;
+	}
+
+	#compose-button-container {
+		height : 80px;
+		#compose-button {
+			height : 48px;
+			width : 149.48px;
+			color: #5f6368;
+			font-size: 14px;
+			font-family: 'Google Sans',Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+			border-radius: 24px;
+			display: inline-flex;
+			justify-content : center;
+			align-items : center;
+			margin-top : 16px;
+			margin-left: 14px;
+			background-color: #fff;
+			img {
+				padding: 0 24px 0 0;
+			}
+			&:hover {
+				cursor : pointer;
+			}
+		}
+	}
+
+	#sub-menu {
+		height : 260px;
+		display: flex;
+		flex-flow : column;
+		border-bottom : 0.001em solid white;
+		div {
+			display: flex;
+			justify-content : flex-start;
+			align-items : center;
+			height : 40px;
+			color: #eeeeee;
+			left : -10px;
+			font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+			img {
+				padding-left : 20px;
+				padding-right : 20px;
+			}
+			&:hover {
+				cursor : pointer;
+				border : 1px solid white;
+				background : #bdbdbd;
+				border-radius :   0px 30px 30px 0em;
+			}
+		}	
+	}
+
+	#status {
+		margin-top : 15px;
+		display: inline-flex;
+		justify-content : flex-start;
+		align-items : center;
+		div {
+			height : 30px;	
+			width : 30px;
+			display : inline-block;
+		    border-radius: 50%;
+		    overflow : hidden;
+		    margin-left : 20px;
+		    margin-right : 5px;
+		}
+		img {
+			height : inherit;	
+			width : inherit;
+			padding-right : 20px;
+			&:hover {
+				cursor : pointer;
+			}
+		}
+		span {
+			&:hover {
+				cursor : pointer;
+			}
+		}
+	}
+
+}
+
+#mail {
+	flex-grow : 8;
+	height : 90vh;
+	background : #3e65cf ;
+	#mail-list {
+		height : 88vh;
+		border : 0.5px solid white;
+		#tabs {
+			display : flex;
+			justify-content : space-around;
+			align-items : center;
+			height : 56px;
+			border-bottom : 1px solid white;
+			div {
+				text-align : center;
+				color : black;
+				display : flex;
+				justify-content : center;
+				align-items : center;
+				width : 33.3%;
+				height : 100%;
+				img {
+					margin-right : 15px;
+				}
+				&:hover{
+					border-bottom : 3px solid red;
+					cursor : pointer;
+				}
+			}
+		}
+
+		.mail-list-item {
+			width : inherit;
+			height : 40px;
+			overflow : hidden;
+			padding-top : 7px;
+			&:hover {
+				cursor : pointer;
+			}
+			.mail-options {
+				padding-left : 5px;
+				display : inline;
+			}
+			#mail-subject {
+				margin-left : 5px;
+				font-weight  : bold;
+				color : black;
+			}
+
+			#mail-text {
+				margin-left : 25px;
+				color : black;
+			}
+
+			#mail-time {
+				color : black;
+			}
+		}
+
+		overflow-x: scroll;
+	}
+}
+
+
+// right section
+#apps {
+	flex-grow : 0.1;
+	height : 90vh;
+	display : flex;
+	flex-flow : column;
+	justify-content : flex-start;
+	align-items : center;
+	margin-left : 10px;
+	div {
+		height : 40px;
+		width : 40px;
+	}
+	img {
+		height : 20px;
+		width : 20px;
+		&:hover {
+			cursor : pointer; 	
+		}
+	}
+	#keep {
+		margin-top : 10px;
+		margin-bottom : 10px;
+	}
+	#add {
+		margin-top : 30px;
+	}
+}

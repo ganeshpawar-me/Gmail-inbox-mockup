@@ -1,0 +1,287 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: #fafafa; }
+
+body {
+  background: #3e65cf; }
+
+#header {
+  width: 100vw;
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #f44336; }
+  #header #logo {
+    height: 40px;
+    width: 109px;
+    margin-left: 1vw; }
+    #header #logo:hover {
+      cursor: pointer; }
+  #header #left-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  #header #search {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    #header #search button {
+      background: transparent;
+      border: 5px  5px  solid black;
+      height: 7.4vh; }
+  #header #right-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    height: 40px; }
+  #header #menu-icon {
+    height: 30px;
+    width: 30px;
+    margin-left: 15px;
+    margin-top: 6px; }
+    #header #menu-icon:hover {
+      cursor: pointer; }
+  #header #search-icon {
+    height: 40px;
+    width: 40px;
+    margin-left: 8vw;
+    border: 1px solid black;
+    border-radius: 5px 0px 0px 5px; }
+    #header #search-icon:hover {
+      cursor: pointer; }
+  #header #search-bar {
+    height: 7vh;
+    width: 50vw;
+    border: 1px solid black;
+    border-radius: 0px 5px 5px 0px;
+    background: transparent;
+    font: normal 16px Roboto,sans-serif;
+    color: black;
+    font-size: 1em; }
+  #header #apps-icon {
+    height: 30px;
+    width: 30px;
+    margin-left: 15vw; }
+    #header #apps-icon:hover {
+      cursor: pointer; }
+  #header #notification-icon {
+    height: 30px;
+    width: 30px;
+    margin-right: 20px;
+    margin-left: 20px; }
+    #header #notification-icon:hover {
+      cursor: pointer; }
+  #header #profile-picture-wrapper {
+    height: 30px;
+    width: 30px;
+    margin-right: 20px;
+    display: inline-block;
+    border-radius: 50%;
+    overflow: hidden; }
+  #header #profile-picture {
+    height: inherit;
+    width: inherit; }
+    #header #profile-picture:hover {
+      cursor: pointer; }
+
+#container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+#menu {
+  height: 90vh;
+  -webkit-box-flex: 50;
+  -ms-flex-positive: 50;
+  flex-grow: 50; }
+  #menu div {
+    height: 10px;
+    width: 100%; }
+  #menu #compose-button-container {
+    height: 80px; }
+    #menu #compose-button-container #compose-button {
+      height: 48px;
+      width: 149.48px;
+      color: #5f6368;
+      font-size: 14px;
+      font-family: 'Google Sans',Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+      border-radius: 24px;
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      margin-top: 16px;
+      margin-left: 14px;
+      background-color: #fff; }
+      #menu #compose-button-container #compose-button img {
+        padding: 0 24px 0 0; }
+      #menu #compose-button-container #compose-button:hover {
+        cursor: pointer; }
+  #menu #sub-menu {
+    height: 260px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    border-bottom: 0.001em solid white; }
+    #menu #sub-menu div {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+      justify-content: flex-start;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      height: 40px;
+      color: #eeeeee;
+      left: -10px;
+      font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif; }
+      #menu #sub-menu div img {
+        padding-left: 20px;
+        padding-right: 20px; }
+      #menu #sub-menu div:hover {
+        cursor: pointer;
+        border: 1px solid white;
+        background: #bdbdbd;
+        border-radius: 0px 30px 30px 0em; }
+  #menu #status {
+    margin-top: 15px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    #menu #status div {
+      height: 30px;
+      width: 30px;
+      display: inline-block;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-left: 20px;
+      margin-right: 5px; }
+    #menu #status img {
+      height: inherit;
+      width: inherit;
+      padding-right: 20px; }
+      #menu #status img:hover {
+        cursor: pointer; }
+    #menu #status span:hover {
+      cursor: pointer; }
+
+#mail {
+  -webkit-box-flex: 8;
+  -ms-flex-positive: 8;
+  flex-grow: 8;
+  height: 90vh;
+  background: #3e65cf; }
+  #mail #mail-list {
+    height: 88vh;
+    border: 0.5px solid white;
+    overflow-x: scroll; }
+    #mail #mail-list #tabs {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      height: 56px;
+      border-bottom: 1px solid white; }
+      #mail #mail-list #tabs div {
+        text-align: center;
+        color: black;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        width: 33.3%;
+        height: 100%; }
+        #mail #mail-list #tabs div img {
+          margin-right: 15px; }
+        #mail #mail-list #tabs div:hover {
+          border-bottom: 3px solid red;
+          cursor: pointer; }
+    #mail #mail-list .mail-list-item {
+      width: inherit;
+      height: 40px;
+      overflow: hidden;
+      padding-top: 7px; }
+      #mail #mail-list .mail-list-item:hover {
+        cursor: pointer; }
+      #mail #mail-list .mail-list-item .mail-options {
+        padding-left: 5px;
+        display: inline; }
+      #mail #mail-list .mail-list-item #mail-subject {
+        margin-left: 5px;
+        font-weight: bold;
+        color: black; }
+      #mail #mail-list .mail-list-item #mail-text {
+        margin-left: 25px;
+        color: black; }
+      #mail #mail-list .mail-list-item #mail-time {
+        color: black; }
+
+#apps {
+  -webkit-box-flex: 0.1;
+  -ms-flex-positive: 0.1;
+  flex-grow: 0.1;
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: 10px; }
+  #apps div {
+    height: 40px;
+    width: 40px; }
+  #apps img {
+    height: 20px;
+    width: 20px; }
+    #apps img:hover {
+      cursor: pointer; }
+  #apps #keep {
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  #apps #add {
+    margin-top: 30px; }
